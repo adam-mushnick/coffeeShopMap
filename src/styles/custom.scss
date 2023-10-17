@@ -1,0 +1,171 @@
+// Import Bootstrap's functions and variables
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+// Import the rest of Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+//card classes
+.carousel-image {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover; /* Cover the entire container without stretching */
+}
+
+/* Custom CSS for show-page-image */
+.show-page-image {
+  width: 100%; /* Full width on large screens */
+}
+
+/* Medium and below screens */
+@media (max-width: 768px) {
+  .show-page-image {
+    width: 90%; /* 90% width */
+    padding: 10px; /* Some padding */
+    margin: auto;
+    display: block;
+  }
+}
+
+.carousel-inner .show-page-image {
+  border-radius: 1rem !important;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 15rem;
+}
+
+.button-container{
+  margin-top: auto;
+}
+
+// reviews
+/* Custom CSS for sticky review form */
+.review-form-sticky {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+  .review-form-sticky {
+    position: static; /* Override sticky behavior */
+  }
+}
+
+/* Medium and above screens */
+@media (min-width: 768px) {
+  .review-form-sticky {
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Enable scrolling if the content overflows */
+  }
+}
+
+//star reviews
+.star-rating {
+  display: inline-block;
+  direction: rtl; /* Right-to-left */
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating span label {
+  color: grey;
+  font-size: 24px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.star-rating .selected ~ span label,
+.star-rating .selected label {
+  color: gold;
+}
+
+
+
+.star-rating span:hover ~ span label,
+.star-rating span:hover label {
+  color: gold;
+}
+
+//review list stars
+.text-gold {
+  color: gold;
+}
+
+.text-grey {
+  color: grey;
+}
+
+
+
+//nav classes
+.nav-link-style{
+    text-decoration: none;
+}
+
+//mapbox classes
+.mapboxgl-popup {
+  padding: 0;
+  border-radius: 8px;
+}
+
+.mapboxgl-popup-content {
+  padding: 0;
+}
+
+.mapboxgl-popup-close-button {
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+//custom mapbox classes
+.popup-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /*align items to left*/
+  background-color: #fff;
+  padding: 25px;
+  max-width: 200px;
+  max-height: 120px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.popup-subtitle{
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.popup-link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding-top: 5px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+
+
+
