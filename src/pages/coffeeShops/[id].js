@@ -174,7 +174,7 @@ const CoffeeShopPage = () => {
                     </button>
                   </div>
                 )}
-              <Link href='/' className='btn btn-outline-secondary mt-3 d-block'>
+              <Link href='/' className='btn btn-outline-secondary my-3 d-block'>
                 Go Back
               </Link>
             </div>
@@ -183,7 +183,7 @@ const CoffeeShopPage = () => {
       </div>
       <div className='row bg-dark'>
         {session && (
-          <div className='col-12 col-md-4 review-form-sticky'>
+          <div className='col-12 col-md-4 review-form-sticky mt-5'>
             <ReviewForm id={id} addReview={addReview} />
           </div>
         )}

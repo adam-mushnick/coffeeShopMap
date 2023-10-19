@@ -15,7 +15,7 @@ function Navbar() {
         </Link>
         <div className=''>
           <ul className='navbar-nav d-flex flex-row'>
-            {!loading && session && (
+            {!loading && (
               <>
                 <li className='nav-item mx-2'>
                   <Link className='nav-link-style' href='/'>

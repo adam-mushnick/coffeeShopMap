@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className='bg-dark text-white d-flex flex-column vh-100'>
       <Navbar />
-      <div className='container my-5'>
+      <div className='container my-5 vh-100'>
         <h1 className='display-4 mb-4'>About This Project</h1>
         <p className='lead'>
           Welcome to my coffee shop platform! This project serves as a portfolio
